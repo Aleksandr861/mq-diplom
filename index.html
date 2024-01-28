@@ -8,7 +8,39 @@
   <title>Document</title>
 </head>
 
-<body>
+<!-- POPUP!!!!! -->
+
+<body class="body">
+  <div class="popup visually visually-hidden">
+    <div class="popup__heading">Ваш фидбек</div>
+    <form class="popup__form">
+      <label class="popup__label label-popup">
+        <span class="label-popup__select">Как часто вы заходите на сайт?</span>
+        <select class="label-popup__list">
+          <option class="label-popup__option" value="Почти каждый день" selected>Почти каждый день</option>
+        </select>
+      </label>
+      <div class="popup__checkbox checkbox-popup">
+        <span class="checkbox-popup__text">Вы подписаны на e-mail рассылку?</span>
+        <label class="checkbox-popup__label">
+          <input class="checkbox-popup__input visually-hidden" type="radio" name="answer">
+          <span class="checkbox-popup__item">Да</span>
+        </label>
+        <label class="checkbox-popup__label">
+          <input class="checkbox-popup__input visually-hidden" type="radio" name="answer">
+          <span class="checkbox-popup__item">Нет</span>
+        </label>
+      </div>
+      <label class="popup__about about-popup">
+        <span class="about-popup__question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+        <textarea class="about-popup__textarea" placeholder="Может, больше рецептов?" required></textarea>
+      </label>
+      <button class="popup__btn" type="submit">Отправить</button>
+    </form>
+  </div>
+
+
+
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
@@ -23,7 +55,6 @@
           <li class="list-header__item"><a href="#0" class="list-header__link">Контакты</a></li>
         </ul>
         <div class="header__burger">
-
           <span class="header__line"></span>
           <span class="header__line"></span>
           <span class="header__line"></span>
@@ -33,7 +64,6 @@
       <a href="#0" class="header__ref ref-header">
         <img class="ref-header__logo" src="svg/noemi-logo.svg" alt="logo"></a>
       <h1 class="header__heading">Блог о творчестве, спорте, и образе жизни</h1>
-    </div>
   </header>
   <section class="trend">
     <h2 class="trend__heading">Сейчас в тренде</h2>
@@ -48,7 +78,7 @@
         </div>
       </arrticle>
       <arrticle class="trend__item">
-        <div class="trend__box trend__box--second">
+        <div class="trend__box">
           <div class="trend__inner">
             <a class="trend__link" href="#">Food</a>
             <h2 class="trend__dscr">Сыры на красивых картинках из интернета: какие они на вкус?</h2>
@@ -327,9 +357,7 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
   </section>
   <footer class="footer">
