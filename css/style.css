@@ -44,12 +44,8 @@ a {
 
 /* POPUP */
 
-.popup__container {
-  position: relative;
-}
-
 .popup__container::after {
-  position: absolute;
+  position: fixed;
   content: "";
   opacity: 0.6;
   width: 100%;
@@ -75,6 +71,7 @@ a {
   position: fixed;
   max-width: 330px;
   z-index: 3;
+
 }
 
 .popup__close {
@@ -225,7 +222,7 @@ a {
   background-image: url("../images/banner-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: 1;
   padding-top: 28px;
   padding-bottom: 127px;
 }
@@ -361,7 +358,6 @@ a {
   background-color: rgba(0, 0, 0, 0);
   border: 3px solid #b59f5b;
   padding: 18px 25px 34px 30px;
-
 }
 
 .trend__item::before {
@@ -653,17 +649,6 @@ a {
   width: 18px;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .aside__heading--newsletter {
   margin-bottom: 26px;
 }
@@ -926,7 +911,6 @@ a {
   text-align: center;
 }
 
-
 .products__btn:hover {
   margin: 0 auto;
   text-align: center;
@@ -1101,6 +1085,7 @@ a {
   }
 
   /* MAIN */
+
   .main {
     max-width: 100%;
   }
@@ -1190,7 +1175,6 @@ a {
     column-gap: 48px;
     row-gap: 36px;
     flex-wrap: wrap;
-
   }
 
   .products__inner {
@@ -1213,12 +1197,10 @@ a {
 
   }
 
-
   /* FOOTER */
 
   .footer__wrapper {
     margin-bottom: 37px;
-    max-width: 699px;
   }
 
   .footer__list {
@@ -1255,6 +1237,7 @@ a {
   }
 
   /* HEADER  */
+
   .header {
     background-image: url("../images/banner-mobile.jpg");
     padding-bottom: 211px;
@@ -1353,9 +1336,6 @@ a {
     width: 100%;
   }
 
-
-
-
   /* MAIN */
 
   .main {
@@ -1408,7 +1388,6 @@ a {
     line-height: 1.42;
     margin-bottom: 20px;
   }
-
 
   .main__text:nth-child(3) {
     margin-bottom: 26px;
@@ -1557,7 +1536,7 @@ a {
 }
 
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
-
+  
   .trend__item {
     justify-content: space-between;
     box-sizing: border-box;
@@ -1565,8 +1544,7 @@ a {
     width: 25%;
   }
 
-
-  .trend__wrp {
+.trend__wrp {
     flex-wrap: nowrap;
   }
 
